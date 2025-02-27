@@ -86,27 +86,16 @@ const contasGerais = {
     }
 }
 
-function mudarFoto(){
-    randomInt = Math.floor(Math.random() * 9) + 1
-
-    divResultado.innerHTML = `<img src="recordations/IMG-20250226-WA000${randomInt}.jpg"></img>`
-}
-
 function darResultado() {
-    if (conta1 == '09102024'){
-        mudarFoto()
+    transformarNumero()
+    if (tipo == '+') {
+        contasGerais.fazContaMais()
+    } else if (tipo == '-') {
+        contasGerais.fazContaMenos()
+    } else if (tipo == 'x') {
+        contasGerais.fazContaMulti()
     }
-    else{
-        transformarNumero()
-        if (tipo == '+') {
-            contasGerais.fazContaMais()
-        } else if (tipo == '-') {
-            contasGerais.fazContaMenos()
-        } else if (tipo == 'x') {
-            contasGerais.fazContaMulti()
-        }
-        numeroguardado = 0
-    }
+    numeroguardado = 0
 }
 
 function reset() {
