@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(52, 52, 52);
+}
+
+.container{
+    background-color: rgba(240, 248, 255, 0.019);
+    border-radius: 5%;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+button{
+    background-color: rgba(154, 153, 153, 0.867);
+    padding: 1.5rem;
+    margin-left: -0.1rem;
+    margin-right: -0.1rem;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15%;
+}
+button:hover{
+    background-color: rgba(132, 132, 132, 0.867);
+}
+.resultado{
+    width: 17.7rem;
+    background-color: rgb(91, 101, 110);
+
+    border-radius: 4%;
+}
+.resu{
+    font-family:fantasy, verd;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.408);
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+}
+.resultadoH {
+    height: 2rem;
+    text-align: right;
+    width: 13.7rem;
+    overflow: hidden;
+    background: linear-gradient(rgba(91, 101, 110, 0.573), rgba(69, 76, 83, 0.573));
+    border-bottom: 1px solid rgba(0, 0, 0, 0.347);
+}
+.operador{
+    background-color: rgb(105, 104, 104);
+    width: 5rem;
+}
+.operador:hover{
+    background-color:rgb(91, 91, 91);
+}
+.resultadob{
+    width: 8.1rem;
+    background-color: rgba(201, 204, 208, 0.869);
+    border-radius: 8%;
+}
+h1{
+    background-color: aliceblue;
+    padding: 2rem;
+}
+h2{
+    padding: 0.1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: rgb(9, 9, 9);
+}
