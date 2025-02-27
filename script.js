@@ -60,7 +60,7 @@ function guardarOperação(x) {
 
 function guardarNumero(x) {
     if (numeroguardado == 0) {        
-        if (conta1[0] == '0' && conta1.length<=1){
+        if (conta1[0] === 0 && conta1.length<=1){
             conta1 = []
         }
         conta1 += x
