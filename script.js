@@ -44,6 +44,19 @@ for (const [key, value] of Object.entries(operadores)) {
     })
 }
 
+onkeydown = (event) =>  {
+    console.log(event.key)
+    if (!isNaN(event.key)){
+        guardarNumero(`${event.key}`)
+    }
+    if (event.key == '+' || event.key == '-' || event.key == '*'){
+        guardarOperação(`${event.key}`)
+    }
+    if (event.key == 'Enter'){
+        darResultado()
+    }
+}
+
 function transformarNumero() {
     conta1 = parseFloat(conta1)
     conta2 = parseFloat(conta2)
@@ -91,7 +104,7 @@ function darResultado() {
     if (tipo == '+') {
         contasGerais.fazContaMais()
     } else if (tipo == '-') {
-        contasGerais.fazContaMenos()
+            contasGerais.fazContaMenos()
     } else if (tipo == 'x') {
         contasGerais.fazContaMulti()
     }
