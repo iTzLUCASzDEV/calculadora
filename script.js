@@ -50,7 +50,11 @@ onkeydown = (event) =>  {
         guardarNumero(`${event.key}`)
     }
     if (event.key == '+' || event.key == '-' || event.key == '*'){
-        guardarOperação(`${event.key}`)
+        if (event.key == '*'){
+            guardarOperação(`x`)
+        } else {
+            guardarOperação(`${event.key}`)
+        }
     }
     if (event.key == 'Enter'){
         darResultado()
